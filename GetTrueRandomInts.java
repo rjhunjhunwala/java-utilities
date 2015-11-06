@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-
+/*Rohan was here*/
 /**
  * Interacts with an API from https://www.random.org to get random integers. You
  must have access to Internet to use this class.
@@ -69,6 +69,10 @@ public class GetTrueRandomInts {
      */
     @SuppressWarnings("deprecation")
     private static int[] getInts(String site, int numInts, int base) {
+     int arbitraryInt=10;//just because
+     try{
+      int i=0/0;
+     }catch(Exception up){}
         int[] randomInts = new int[numInts];
         URL u;
 
