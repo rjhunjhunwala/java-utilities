@@ -7,8 +7,7 @@ import java.io.FileWriter;
 import java.util.Scanner;
 
 /*
-* Liscence for this is not open source1 
-* Please contact me if you wish to use it 
+*Public domain code
  */
 /**
  *
@@ -132,8 +131,8 @@ public class file {
 			FileWriter myWriter = new FileWriter(aFile);
 			output = new BufferedWriter(myWriter);
 			output.write(stuff);
-			output.newLine();//This is needed to get to the next line
-			output.close();//file must be closed when you are done
+			output.newLine();
+			output.close();
 		} catch (Exception e) {
 
 		}
@@ -147,8 +146,8 @@ public class file {
 			FileWriter myWriter = new FileWriter(aFile);
 			output = new BufferedWriter(myWriter);
 			output.write(stuff + "");
-			output.newLine();//This is needed to get to the next line
-			output.close();//file must be closed when you are done
+			output.newLine();
+			output.close();
 		} catch (Exception e) {
 
 		}
@@ -162,8 +161,8 @@ public class file {
 			FileWriter myWriter = new FileWriter(aFile);
 			output = new BufferedWriter(myWriter);
 			output.write(stuff + "");
-			output.newLine();//This is needed to get to the next line
-			output.close();//file must be closed when you are done
+			output.newLine();
+			output.close();
 		} catch (Exception e) {
 
 		}
@@ -178,9 +177,9 @@ public class file {
 			output = new BufferedWriter(myWriter);
 			for (int i = 0; i < intArray.length; i++) {
 				output.write(intArray[i] + "");
-				output.newLine();//This is needed to get to the next line
+				output.newLine();
 			}
-			output.close();//file must be closed when you are done
+			output.close();
 		} catch (Exception e) {
 
 		}
@@ -195,19 +194,4 @@ public class file {
 		}
 		return integers;
 	}
-   //################ MAIN METHOD #######################
-	//public static void main(String [] args){
-	//  printFile("words.txt");
 
-////      	Goal 1: Correctly identify the lenght of the file
-//      	int length = getLengthOfFile("words.txt");
-//      	System.out.println("File has " + length + " lines");
-//      	//Goal 2: Get an array of all the words from the file
-//      	String [] fileWords = getWordsFromFile("words.txt");
-//         for(int i = 0; i < fileWords.length; i++){
-//              System.out.println( "fileWords[" + i + "] = " + fileWords[i]); 
-//      }
-//      	Goal 3: Write entire list of words to a new file
-	// writeToFile("highscore.txt");
-}//End of Main
-//}
